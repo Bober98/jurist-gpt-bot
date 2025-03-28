@@ -6,8 +6,8 @@ import openai
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-API_TOKEN = "8083616114:AAGNPKZir7AYihRgb8rC_01izvejz80Kn3o"
-OPENAI_API_KEY = "sk-proj-0zXcXFclFhRItLRpVlrczQppV3VjdxfLmLL-igzhx_uasJSk1LYgLApGDyPkvzY_YCEAJOZ-RMTDhL1BCnmGP3kYaM3qUDQ5yBeeVS1kcV78OvfVXDKZ5PjT-E-0mTyw_JTdJySMO0pt12NIDI6RDaOFRbsA"
+API_TOKEN = os.getenv("API_TOKEN")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 openai.api_key = OPENAI_API_KEY
 
 COURT_MODE = {}
